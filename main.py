@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # Load the model (replace with your actual model loading)
 # Assuming the model is saved as 'plant_growth_model.h5'
-# model = tf.keras.models.load_model('plant_growth_model.h5')
+model = tf.keras.models.load_model('plant_growth_model.h5')
 
 # Dummy model and scaler for demonstration (replace with your actual model and scaler)
 class DummyModel:
@@ -19,7 +19,13 @@ scaler = StandardScaler()
 
 # Load label encoders (replace with your actual label encoders)
 # le_Soil_Type = LabelEncoder()
-# ... (load other label encoders)
+joblib.dump(le_Soil_Type, 'le_Soil_Type.pkl')
+joblib.dump(le_Water_Frequency, 'le_Water_Frequency.pkl')
+joblib.dump(le_Fertilizer_Type, 'le_Fertilizer_Type.pkl')
+joblib.dump(le_Sunlight_Hours, 'le_Sunlight_Hours.pkl')
+joblib.dump(le_Temperature, 'le_Temperature.pkl')
+joblib.dump(le_Humidity, 'le_Humidity.pkl')
+ (load other label encoders)
 
 # Dummy label encoders for demonstration
 class DummyLabelEncoder:
