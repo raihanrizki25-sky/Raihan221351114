@@ -19,12 +19,6 @@ scaler = StandardScaler()
 
 # Load label encoders (replace with your actual label encoders)
 le_Soil_Type = LabelEncoder()
-joblib.dump(le_Soil_Type, 'le_Soil_Type.pkl')
-joblib.dump(le_Water_Frequency, 'le_Water_Frequency.pkl')
-joblib.dump(le_Fertilizer_Type, 'le_Fertilizer_Type.pkl')
-joblib.dump(le_Sunlight_Hours, 'le_Sunlight_Hours.pkl')
-joblib.dump(le_Temperature, 'le_Temperature.pkl')
-joblib.dump(le_Humidity, 'le_Humidity.pkl')
 (load other label encoders)
 
 # Dummy label encoders for demonstration
